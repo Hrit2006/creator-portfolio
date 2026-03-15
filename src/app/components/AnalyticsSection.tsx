@@ -14,7 +14,7 @@ export function AnalyticsSection() {
     {
       icon: TrendingUp,
       label: 'Top Performing Reel',
-      value: '34.9K+',
+      value: '35.2K+',
       subtitle: 'Viral Engagement',
       color: 'from-purple-500 via-violet-600 to-blue-600',
       glowColor: 'group-hover:shadow-[0_0_50px_-10px_rgba(168,85,247,0.3)]',
