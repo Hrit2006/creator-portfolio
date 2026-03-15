@@ -23,7 +23,7 @@ export function AnalyticsSection() {
     {
       icon: Users,
       label: 'Followers',
-      value: '219',
+      value: '218',
       subtitle: 'Highly Engaged',
       color: 'from-blue-500 via-cyan-600 to-teal-600',
       glowColor: 'group-hover:shadow-[0_0_50px_-10px_rgba(59,130,246,0.3)]',
