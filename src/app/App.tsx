@@ -7,7 +7,7 @@ import { ServicesSection } from './components/ServicesSection';
 import { ContactSection } from './components/ContactSection';
 const profilePhoto = '/jinia.jpeg';
 const topPerformerReel = '/school-plot-jinia.jpeg';
-const redOutfitReel = '/red-saree-jinia.jpeg';
+const redOutfitReel = '/school-plot-jinia.jpeg.jpeg';
 
 export default function App() {
   // Profile and content images
