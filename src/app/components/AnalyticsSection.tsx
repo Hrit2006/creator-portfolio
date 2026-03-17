@@ -5,7 +5,7 @@ export function AnalyticsSection() {
     {
       icon: Eye,
       label: '30-Day Reach',
-      value: '62K+',
+      value: '71K+',
       subtitle: 'Total Views',
       color: 'from-pink-500 via-rose-600 to-indigo-600',
       glowColor: 'group-hover:shadow-[0_0_50px_-10px_rgba(236,72,153,0.3)]',
@@ -14,7 +14,7 @@ export function AnalyticsSection() {
     {
       icon: TrendingUp,
       label: 'Top Performing Reel',
-      value: '37K+',
+      value: '40K+',
       subtitle: 'Viral Engagement',
       color: 'from-purple-500 via-violet-600 to-blue-600',
       glowColor: 'group-hover:shadow-[0_0_50px_-10px_rgba(168,85,247,0.3)]',
@@ -23,7 +23,7 @@ export function AnalyticsSection() {
     {
       icon: Users,
       label: 'Followers',
-      value: '240',
+      value: '290',
       subtitle: 'Highly Engaged',
       color: 'from-blue-500 via-cyan-600 to-teal-600',
       glowColor: 'group-hover:shadow-[0_0_50px_-10px_rgba(59,130,246,0.3)]',
