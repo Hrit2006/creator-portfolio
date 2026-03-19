@@ -18,7 +18,7 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
     },
     {
       image: image2,
-      views: '10K',
+      views: '12K',
       title: 'Red Outfit Aesthetic',
       insight: 'High-production fashion visuals driving premium brand engagement.',
       category: 'Lifestyle',
