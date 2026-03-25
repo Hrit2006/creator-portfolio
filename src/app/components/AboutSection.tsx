@@ -84,14 +84,14 @@ export function AboutSection() {
               <div className="group relative p-8 rounded-[2rem] bg-[#0a0a0a] border border-white/5 hover:border-pink-500/30 transition-all duration-500 overflow-hidden">
                 <div className="absolute top-0 right-0 w-16 h-16 bg-pink-500/5 blur-2xl group-hover:bg-pink-500/10" />
                 <BarChart3 className="w-8 h-8 text-pink-500 mb-4 transition-transform group-hover:scale-110" />
-                <h4 className="text-4xl font-black text-white tracking-tighter">5000+</h4>
+                <h4 className="text-4xl font-black text-white tracking-tighter">7000+</h4>
                 <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mt-1">Monthly Reach</p>
               </div>
               
               <div className="group relative p-8 rounded-[2rem] bg-[#0a0a0a] border border-white/5 hover:border-purple-500/30 transition-all duration-500 overflow-hidden">
                 <div className="absolute top-0 right-0 w-16 h-16 bg-purple-500/5 blur-2xl group-hover:bg-purple-500/10" />
                 <Users className="w-8 h-8 text-purple-500 mb-4 transition-transform group-hover:scale-110" />
-                <h4 className="text-4xl font-black text-white tracking-tighter">80K</h4>
+                <h4 className="text-4xl font-black text-white tracking-tighter">110K+</h4>
                 <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mt-1">Total Views</p>
               </div>
             </div>

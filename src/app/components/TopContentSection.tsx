@@ -9,7 +9,7 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
   const topReels = [
     {
       image: image1,
-      views: '40K',
+      views: '44K',
       title: 'Plot k liye school mein kand...',
       insight: 'Strategic use of relatable storytelling and trending audio hooks.',
       category: 'Viral Humor',
@@ -18,7 +18,7 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
     },
     {
       image: image2,
-      views: '12K',
+      views: '25K',
       title: 'Red Outfit Aesthetic',
       insight: 'High-production fashion visuals driving premium brand engagement.',
       category: 'Lifestyle',
