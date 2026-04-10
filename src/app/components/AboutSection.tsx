@@ -1,7 +1,24 @@
 import { MapPin, Heart, Sparkles, Instagram, Users, BarChart3, ArrowRight } from 'lucide-react';
+import confetti from 'canvas-confetti';
 
 export function AboutSection() {
   const howrahBridgeImage = "https://images.unsplash.com/photo-1648440108249-30567222448a?auto=format&fit=crop&q=80&w=1080";
+
+  const handleCollaborationClick = () => {
+    // 1. Trigger realistic confetti
+    confetti({
+      particleCount: 150,
+      spread: 70,
+      origin: { y: 0.8 },
+      colors: ['#ec4899', '#a855f7', '#6366f1', '#ffffff'] // pink, purple, indigo, white
+    });
+    
+    // 2. Smooth scroll to contact piece
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="relative py-32 px-6 bg-[#050505] overflow-hidden">
@@ -97,7 +114,10 @@ export function AboutSection() {
             </div>
 
             {/* Premium CTA */}
-            <button className="group relative flex items-center justify-center gap-3 bg-white text-black px-10 py-5 rounded-full font-black uppercase text-xs tracking-[0.2em] transition-all hover:scale-105 active:scale-95 overflow-hidden">
+            <button 
+              onClick={handleCollaborationClick}
+              className="group relative flex items-center justify-center gap-3 bg-white text-black px-10 py-5 rounded-full font-black uppercase text-xs tracking-[0.2em] transition-all hover:scale-105 active:scale-95 overflow-hidden"
+            >
               <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               <Instagram className="relative w-5 h-5 group-hover:text-white transition-colors" />
               <span className="relative group-hover:text-white transition-colors">Start a Collaboration</span>

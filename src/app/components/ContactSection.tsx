@@ -2,7 +2,7 @@ import { Mail, Instagram, MapPin, Sparkles, Code2, ExternalLink, Phone, Globe } 
 
 export function ContactSection() {
   return (
-    <section className="relative py-32 px-6 bg-[#030303] overflow-hidden">
+    <section id="contact" className="relative py-32 px-6 bg-[#030303] overflow-hidden">
       
       {/* --- CINEMATIC BACKGROUND EFFECTS --- */}
       {/* Pulsing Neon Orbs */}
