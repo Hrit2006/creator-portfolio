@@ -5,17 +5,17 @@ export function AboutSection() {
 
   return (
     <section className="relative py-32 px-6 bg-[#050505] overflow-hidden">
-      
+
       {/* --- AMBIENT DARK EFFECTS --- */}
       <div className="absolute top-1/4 -right-20 w-[500px] h-[500px] bg-pink-600/10 rounded-full blur-[140px] pointer-events-none animate-pulse" />
       <div className="absolute bottom-1/4 -left-20 w-[500px] h-[500px] bg-purple-900/10 rounded-full blur-[140px] pointer-events-none" />
-      
+
       {/* Subtle Dot Matrix Background */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
-           style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(#fff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        
+
         {/* Header Section */}
         <div className="flex flex-col items-center mb-24 text-center">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md">
@@ -27,21 +27,21 @@ export function AboutSection() {
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full mt-2 opacity-50" />
         </div>
-        
+
         <div className="grid lg:grid-cols-2 gap-20 items-center">
-          
+
           {/* Left Side - Visual Storytelling with Parallax Feel */}
           <div className="relative group">
             {/* The Outer Glow */}
             <div className="absolute -inset-6 bg-gradient-to-tr from-pink-500/20 to-purple-500/20 rounded-[3rem] blur-3xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
-            
+
             <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-[#0a0a0a] shadow-2xl">
-              <img 
-                src={howrahBridgeImage} 
-                alt="Howrah Bridge Kolkata" 
+              <img
+                src={howrahBridgeImage}
+                alt="Howrah Bridge Kolkata"
                 className="w-full h-[550px] object-cover grayscale-[40%] group-hover:grayscale-0 group-hover:scale-110 transition duration-1000 ease-out"
               />
-              
+
               {/* Overlay Gradient for Image Readability */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60" />
 
@@ -69,7 +69,7 @@ export function AboutSection() {
                   Creative Storyteller
                 </h3>
               </div>
-              
+
               <p className="text-2xl text-gray-300 leading-snug font-light italic">
                 Specializing in <span className="text-white font-medium underline decoration-purple-500 decoration-2 underline-offset-8">aesthetic lifestyle narratives</span> that bridge heritage and modern trends.
               </p>
@@ -87,11 +87,11 @@ export function AboutSection() {
                 <h4 className="text-4xl font-black text-white tracking-tighter">15K+</h4>
                 <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mt-1">Monthly Reach</p>
               </div>
-              
+
               <div className="group relative p-8 rounded-[2rem] bg-[#0a0a0a] border border-white/5 hover:border-purple-500/30 transition-all duration-500 overflow-hidden">
                 <div className="absolute top-0 right-0 w-16 h-16 bg-purple-500/5 blur-2xl group-hover:bg-purple-500/10" />
                 <Users className="w-8 h-8 text-purple-500 mb-4 transition-transform group-hover:scale-110" />
-                <h4 className="text-4xl font-black text-white tracking-tighter">200K+</h4>
+                <h4 className="text-4xl font-black text-white tracking-tighter">320K+</h4>
                 <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest mt-1">Total Views</p>
               </div>
             </div>
