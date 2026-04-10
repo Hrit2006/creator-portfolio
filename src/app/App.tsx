@@ -3,6 +3,7 @@ import { AboutSection } from './components/AboutSection';
 import { AnalyticsSection } from './components/AnalyticsSection';
 import { ContentPillarsSection } from './components/ContentPillarsSection';
 import { TopContentSection } from './components/TopContentSection';
+import { SocialMediaFeedSection } from './components/SocialMediaFeedSection';
 import { ServicesSection } from './components/ServicesSection';
 import { ContactSection } from './components/ContactSection';
 const profilePhoto = '/jinia.jpeg';
@@ -22,6 +23,7 @@ export default function App() {
       <AnalyticsSection />
       <ContentPillarsSection />
       <TopContentSection image1={contentImage1} image2={contentImage2} />
+      <SocialMediaFeedSection />
       <ServicesSection />
       <ContactSection />
     </div>

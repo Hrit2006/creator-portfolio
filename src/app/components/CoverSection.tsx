@@ -1,4 +1,4 @@
-import { Instagram, Sparkles, MapPin, ChevronDown, Zap } from 'lucide-react';
+import { Instagram, Sparkles, MapPin, ChevronDown, Zap, Download } from 'lucide-react';
 
 interface CoverSectionProps {
   profileImage: string;
@@ -71,20 +71,30 @@ export function CoverSection({ profileImage }: CoverSectionProps) {
           </p>
 
           {/* Glassmorphism CTA Bar */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 pt-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-4 flex-wrap">
             <a 
               href="https://instagram.com/liaaacoree_" 
               target="_blank" 
-              className="group relative flex items-center gap-3 px-10 py-4 bg-white text-black rounded-full font-black uppercase text-xs tracking-widest overflow-hidden transition-all hover:scale-105 active:scale-95"
+              className="group relative flex items-center gap-3 px-8 py-4 bg-white text-black rounded-full font-black uppercase text-xs tracking-widest overflow-hidden transition-all hover:scale-105 active:scale-95"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity" />
               <Instagram className="relative w-5 h-5 group-hover:text-white transition-colors" />
               <span className="relative group-hover:text-white transition-colors">@liaaacoree_</span>
             </a>
+
+            <a 
+              href="/media-kit.pdf" 
+              download
+              className="group relative flex items-center gap-3 px-8 py-4 bg-[#0a0a0a] text-white rounded-full font-black uppercase text-xs tracking-widest overflow-hidden transition-all hover:scale-105 active:scale-95 border border-white/20 hover:border-pink-500/50 shadow-[0_0_20px_rgba(236,72,153,0.15)] hover:shadow-[0_0_30px_rgba(236,72,153,0.3)]"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity blur-md" />
+              <Download className="relative w-5 h-5 text-pink-400 group-hover:text-pink-300 transition-colors animate-pulse" />
+              <span className="relative transition-colors">Media Kit</span>
+            </a>
             
-            <div className="flex items-center gap-3 px-6 py-3 bg-white/5 rounded-full border border-white/10 backdrop-blur-md">
+            <div className="flex items-center gap-3 px-6 py-4 bg-white/5 rounded-full border border-white/10 backdrop-blur-md">
               <MapPin className="w-4 h-4 text-pink-500" />
-              <span className="text-sm font-bold text-gray-300 tracking-tighter uppercase">Kolkata, India</span>
+              <span className="text-sm font-bold text-gray-300 tracking-tighter uppercase relative top-[1px]">Kolkata, India</span>
             </div>
           </div>
         </div>
