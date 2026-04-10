@@ -9,8 +9,8 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
   const topReels = [
     {
       image: image1,
-      views: '44K',
-      title: 'Plot k liye school mein kand...',
+      views: '80K',
+      title: 'Bengali Vibe check...',
       insight: 'Strategic use of relatable storytelling and trending audio hooks.',
       category: 'Viral Humor',
       accent: 'from-pink-500 to-rose-500',
@@ -18,7 +18,7 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
     },
     {
       image: image2,
-      views: '50K',
+      views: '62K',
       title: 'Red Outfit Aesthetic',
       insight: 'High-production fashion visuals driving premium brand engagement.',
       category: 'Lifestyle',
@@ -29,17 +29,17 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
 
   return (
     <section className="relative py-28 px-6 bg-[#080808] overflow-hidden">
-      
+
       {/* --- HIGH-CONTRAST AMBIENT BACKGROUND --- */}
       <div className="absolute top-0 right-0 w-[50%] h-[50%] bg-pink-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse" />
       <div className="absolute bottom-0 left-0 w-[50%] h-[50%] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none" />
-      
+
       {/* Subtlest Grid Overlay for Depth */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
-           style={{ backgroundImage: `radial-gradient(#ffffff 1px, transparent 1px)`, backgroundSize: '40px 40px' }} />
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{ backgroundImage: `radial-gradient(#ffffff 1px, transparent 1px)`, backgroundSize: '40px 40px' }} />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        
+
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-xl">
@@ -62,21 +62,21 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {topReels.map((reel, index) => (
             <div key={index} className="group relative flex flex-col">
-              
+
               {/* Image Container */}
               <div className={`relative aspect-[4/5] overflow-hidden rounded-[3rem] border border-white/10 transition-all duration-500 ${reel.glow} hover:border-white/20`}>
-                <img 
-                  src={reel.image} 
+                <img
+                  src={reel.image}
                   alt={reel.title}
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale-[20%] group-hover:grayscale-0"
                 />
-                
+
                 {/* Overlay Gradient for Text Readability */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent opacity-80" />
 
                 {/* Vertical Category Label */}
                 <div className="absolute top-10 left-0 py-2 px-5 bg-white text-black font-black text-[10px] uppercase tracking-[0.3em] rounded-r-full shadow-xl">
-                   {reel.category}
+                  {reel.category}
                 </div>
 
                 {/* Floating Stats Bar */}
@@ -96,7 +96,7 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
                       <span className="text-[10px] font-black uppercase tracking-tighter">Engagement</span>
                     </div>
                     <div className="h-1 w-12 bg-white/10 rounded-full overflow-hidden">
-                       <div className={`h-full bg-gradient-to-r ${reel.accent} w-[85%]`} />
+                      <div className={`h-full bg-gradient-to-r ${reel.accent} w-[85%]`} />
                     </div>
                   </div>
                 </div>
@@ -105,8 +105,8 @@ export function TopContentSection({ image1, image2 }: TopContentSectionProps) {
               {/* Text Info Below Image */}
               <div className="mt-10 px-4">
                 <div className="flex items-center gap-2 mb-4">
-                   <div className="w-2 h-2 rounded-full bg-pink-500 animate-ping" />
-                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">Case Study 0{index + 1}</span>
+                  <div className="w-2 h-2 rounded-full bg-pink-500 animate-ping" />
+                  <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">Case Study 0{index + 1}</span>
                 </div>
                 <h3 className="text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-pink-400 transition-colors duration-300">
                   {reel.title}

@@ -7,7 +7,7 @@ import { SocialMediaFeedSection } from './components/SocialMediaFeedSection';
 import { ServicesSection } from './components/ServicesSection';
 import { ContactSection } from './components/ContactSection';
 const profilePhoto = '/jinia.jpeg';
-const topPerformerReel = '/school-plot-jinia.jpeg';
+const topPerformerReel = '/bengali.jpeg';
 const redOutfitReel = '/school-plot-jinia.jpeg.jpeg';
 
 export default function App() {

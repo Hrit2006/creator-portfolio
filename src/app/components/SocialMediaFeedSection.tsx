@@ -6,43 +6,43 @@ const feedItems = [
   {
     id: 1,
     type: 'image',
-    src: '/jinia.jpeg',
-    likes: '1.2K',
-    comments: 45
+    src: '/splitsvilla.jpeg',
+    likes: '51K',
+    comments: 100
   },
   {
     id: 2,
     type: 'video',
     src: '/school-plot-jinia.jpeg',
-    likes: '8.4K',
-    comments: 320
+    likes: '44.1K',
+    comments: 35
   },
   {
     id: 3,
     type: 'image',
     src: '/school-plot-jinia.jpeg.jpeg',
-    likes: '2.1K',
-    comments: 89
+    likes: '62K',
+    comments: 2000
   },
   {
     id: 4,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&h=800&fit=crop',
-    likes: '3.5K',
-    comments: 112
+    src: '/growhair.jpeg',
+    likes: '8K',
+    comments: 20
   },
   {
     id: 5,
     type: 'video',
-    src: 'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&h=500&fit=crop',
-    likes: '5K',
-    comments: 204
+    src: '/big_believer.jpeg',
+    likes: '4.8K',
+    comments: 12
   },
   {
     id: 6,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=600&h=700&fit=crop',
-    likes: '900',
+    src: '/bengali.jpeg',
+    likes: '80K',
     comments: 23
   }
 ];
@@ -60,23 +60,23 @@ export function SocialMediaFeedSection() {
               The <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">Feed</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-xl font-light leading-relaxed">
-               A curated look into latest fashion drops, lifestyle vlogs, and behind-the-scenes moments.
+              A curated look into latest fashion drops, lifestyle vlogs, and behind-the-scenes moments.
             </p>
           </div>
           <div className="hidden md:block">
-             <div className="flex gap-2">
-                <span className="w-2 h-2 rounded-full bg-pink-500"></span>
-                <span className="w-2 h-2 rounded-full bg-purple-500"></span>
-                <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
-             </div>
+            <div className="flex gap-2">
+              <span className="w-2 h-2 rounded-full bg-pink-500"></span>
+              <span className="w-2 h-2 rounded-full bg-purple-500"></span>
+              <span className="w-2 h-2 rounded-full bg-indigo-500"></span>
+            </div>
           </div>
         </div>
 
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="24px">
             {feedItems.map((item, index) => (
-              <div 
-                key={item.id} 
+              <div
+                key={item.id}
                 className="group relative rounded-2xl overflow-hidden cursor-pointer bg-white/5 border border-white/10"
               >
                 {/* Image */}
@@ -111,9 +111,9 @@ export function SocialMediaFeedSection() {
                 {/* Top-Right Icon Indicator */}
                 <div className="absolute top-4 right-4 z-10 pointer-events-none transition-opacity duration-300 group-hover:opacity-0">
                   {item.type === 'video' ? (
-                     <div className="bg-black/60 backdrop-blur-md p-2 rounded-lg border border-white/10">
-                       <Play className="w-4 h-4 text-white fill-white" />
-                     </div>
+                    <div className="bg-black/60 backdrop-blur-md p-2 rounded-lg border border-white/10">
+                      <Play className="w-4 h-4 text-white fill-white" />
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -129,10 +129,10 @@ export function SocialMediaFeedSection() {
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-2"
           >
-             <span className="px-8 py-4 bg-[#0a0a0a] border border-white/20 text-white rounded-full font-bold uppercase text-sm tracking-widest hover:border-pink-500 hover:shadow-[0_0_20px_rgba(236,72,153,0.2)] transition-all">
-                View Full Feed
-             </span>
-             <span className="text-[10px] text-gray-500 uppercase tracking-widest group-hover:text-pink-400 transition-colors">Opens Instagram</span>
+            <span className="px-8 py-4 bg-[#0a0a0a] border border-white/20 text-white rounded-full font-bold uppercase text-sm tracking-widest hover:border-pink-500 hover:shadow-[0_0_20px_rgba(236,72,153,0.2)] transition-all">
+              View Full Feed
+            </span>
+            <span className="text-[10px] text-gray-500 uppercase tracking-widest group-hover:text-pink-400 transition-colors">Opens Instagram</span>
           </a>
         </div>
       </div>
